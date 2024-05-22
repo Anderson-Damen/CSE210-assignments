@@ -19,7 +19,7 @@ class Journal
 
     public void Display()
     {
-        Console.WriteLine(_entries);
+        Console.WriteLine($"{_entries}");
     }
 
     public void Save()
