@@ -1,8 +1,10 @@
+using System.Net.Mail;
+using System.Runtime.CompilerServices;
+
 class Entry
 {
-    public string _entryText;
+    public string _entry;
     public string _entryDate;
-    public string _entryPromt;
-    public void Display();
+    public string _entryPrompt;
 
 }

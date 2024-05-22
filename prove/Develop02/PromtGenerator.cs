@@ -6,7 +6,7 @@ class PromptGenerator
     "What was the strongest emotion I felt today?",
     "If I had one thing I could do over today, what would it be?",
     "How did I see the hand of the Lord in my life today?",
-    "what was the hardest thing to happen today?"
+    "What was the hardest thing to happen today?"
     };
 
     public string GetRandomPrompt()
