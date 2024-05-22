@@ -1,4 +1,4 @@
-using System.Security.Cryptography;
+using System.IO;
 
 class Journal
 {
@@ -9,7 +9,7 @@ class Journal
         string generatedPrompt =newPrompt.GetRandomPrompt();
         Console.WriteLine(generatedPrompt);
         string response = Console.ReadLine();
-        string time = DateTime.Now.ToString("h:mm:ss tt");
+        string time = DateTime.Now.ToString("h/mm/ss tt");
         Entry newEntry = new Entry();
         newEntry._entry = response;
         newEntry._entryDate = time;
