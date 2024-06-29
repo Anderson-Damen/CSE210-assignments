@@ -19,12 +19,24 @@ class Journal
 
     public void Display()
     {
-        Console.WriteLine($"{_entries}");
+        foreach (Entry entry in _entries)
+        {
+            entry.Display();
+        }
     }
 
     public void Save()
     {
-        
+        string txtfile = "Journal.txt";
+
+        using (StreamWriter outputFile = new StreamWriter(txtfile))
+        {
+            foreach(Entry entry in _entries)
+            {
+                entry.saveFile()
+            }
+            
+        }
     }
 
     public void Load()

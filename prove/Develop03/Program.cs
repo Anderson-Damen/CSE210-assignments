@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop03 World!");
+       Word word = new Word();
+       word._word = "hello";
+       word.HideWord(word._word);
+
+       Console.WriteLine($"{word._hiddenWord}");
     }
 }

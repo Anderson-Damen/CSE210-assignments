@@ -3,10 +3,11 @@ using System.IO;
 
 class Program
 {
-    static public Journal journal;
     static void Main(string[] args)
     {
         int input = 0;
+        
+        Journal journal = new Journal();
         while (input != 5)
         {
             Console.WriteLine("");
@@ -19,7 +20,7 @@ class Program
 
             string userInput = Console.ReadLine();
             input = int.Parse(userInput);
-            Journal journal = new Journal();
+            
 
         
             if (input == 1)
