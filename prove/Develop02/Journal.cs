@@ -29,13 +29,12 @@ class Journal
     {
         string txtfile = "Journal.txt";
 
-        using (StreamWriter outputFile = new StreamWriter(txtfile))
+        using (StreamWriter outputfile = new StreamWriter(txtfile))
         {
             foreach(Entry entry in _entries)
             {
-                entry.saveFile()
+                entry.saveFile();
             }
-            
         }
     }
 
