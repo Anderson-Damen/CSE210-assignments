@@ -27,5 +27,8 @@ class Program
         }
 
         static void DisplayResult(int squared_number, string user_name, int user_number)
+        {
+            Console.WriteLine($"{user_name}, the square of your number is {squared_number}.");
+        }
     }
 }
